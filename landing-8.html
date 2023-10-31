@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+
+    <!-- swiper js libary -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll libary -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+</head>
+
+
+<body class="bg-black text-white">
+
+    <header class="navbar  flex flex-row justify-between items-center mx-10 py-5 ">
+        <div class="nav-1 w-2/12 ">
+            <h4 class="font-semi-bold text-2xl">Web Draw</h4>
+        </div>
+        <div class="nav-2">
+            <ul class="flex flex-row gap-12">
+                <li><a class="relative text-lg focus:text-black  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Home</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Games</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Rules</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Map</a></li>
+            </ul>
+        </div>
+        <div class="nav-3 flex flex-row gap-4">
+            <a class="border-2 rounded-md p-2 border-white hover:bg-white hover:text-black   text-white "
+                href="">Donate</a>
+                <a class="border-2 rounded-md p-2 hover:border-white hover:bg-black bg-white text-black   hover:text-white "
+                href="">Get Started</a>
+        </div>
+    </header>
+
+    <main class="flex flex-row  pt-20 gap-10 items-center justify-between  mx-10">
+
+        <div class="hero-1 flex flex-col gap-10 w-10/12" data-aos="fade-right">
+            <h4 class="text-6xl font-semi-bold ">Build a great portfolio to showcase !!</h4>
+     
+            <div class="py-10 flex flex-col gap-10">
+                <p class="text-md w-10/12">Our team of experienced designers and developers will work with you to create a portfolio 
+                    that is visually appealing, easy to navigate, and highlights your skills and experience.
+                     We'll also help you choose the right projects to showcase and write compelling copy that tells your story.
+    
+                </p>
+                <div class="flex flex-row gap-10">
+                    <a class="border-2 rounded-md p-2 border-white hover:bg-white hover:text-black   text-white "
+                    href="">Try web-draw for free</a>
+                    <a class="border-2 rounded-md p-2 hover:border-white hover:bg-black bg-white text-black   hover:text-white "
+                    href="">How it works</a>
+                </div>
+                
+            </div>
+            <div class="flex flex-row gap-5 text-2xl ">
+                <p class="text-slate-300 text-sm">Companies that trust US</p>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="hero-2" data-aos="zoom-in-left">
+            <img src="/img/hero-8.png"  alt="" style="width: 150%;">
+        </div>
+    </main>
+
+</body>
+
+<script>
+    //to start using the libary
+    AOS.init(
+    );
+
+</script>
+
+</html>

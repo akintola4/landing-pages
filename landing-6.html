@@ -6,6 +6,10 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+      <!-- animate on scroll libary -->
+      <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -40,24 +44,28 @@
     <main class="flex flex-col  pt-10 gap-80 mx-10">
         <div class="hero-1 justify-between flex flex-row relative ">
             <p class="i"></p>
-            <p class="w-4/12 text-right ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a dignissimos tenetur aut laboriosam
+            <p class="w-4/12 text-right " data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a dignissimos tenetur aut laboriosam
                  ullam eum eveniet odit natus porro, ipsum aliquam, cumque iure unde aspernatur fuga, perspiciatis quis quisquam!</p>
         </div>
         <div class="hero-2 flex  self-center  rotate-45 w-7/12 fixed  mt-24 " style="z-index: -1;" >
-            <img src="/img/bg-6.png" class="" alt="">
+            <img src="/img/bg-6.png" class="" alt="" data-aos="fade-right">
         </div>
         <div class="hero-3  flex flex-row justify-between items-end">
-            <div class="flex flex-col font-bold text-6xl gap-4">
+            <div class="flex flex-col font-bold text-6xl gap-4" data-aos="fade-left">
                 <h4> Unlimited</h4>
                 <h4 class="skew-y-6 ">"Free"</h4>
                 <h4>Classes</h4>
             </div>
             
-            <a class="relative font-bold  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                        href="">Compare Courses <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            <a class="relative font-bold   w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="" >Compare Courses <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
         </div>
     </main>
-
+<script>
+      //to start using the libary
+      AOS.init(
+        );
+</script>
 </body>
 
 </html>

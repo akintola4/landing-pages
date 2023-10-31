@@ -6,6 +6,10 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+      <!-- animate on scroll libary -->
+      <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -33,13 +37,13 @@
 
         </div>
     </header>
-    <img src="/img/bg-5-side.png" class="absolute left-0 bottom-0 " width="70%" style="    z-index: -1;" alt="">
-    <img src="/img/bg-5-side-2.png" class="absolute right-0 bottom-0 rotate-180 "  width="70%" style="    z-index: -1;" alt="">
+    <img src="/img/bg-5-side.png" class="absolute left-0 bottom-0 " width="70%" style="    z-index: -1;" alt="" data-aos="fade-right">
+    <img src="/img/bg-5-side-2.png" class="absolute right-0 bottom-0 rotate-180 "  width="70%" style="    z-index: -1;" alt="" >
     <main class="flex flex-col justify-around pt-10 gap-10 items-center justify-items-center  mx-10">
       
       
-                <h4 class="font-bold py-5 text-9xl">scrabble</h4>
-                <div class="flex flex-col items-center justify-center gap-2">
+                <h4 class="font-bold py-5 text-9xl" data-aos="fade-down">scrabble</h4>
+                <div class="flex flex-col items-center justify-center gap-2" data-aos="fade-down">
                     <div class="flex flex-row items-center justify-center gap-2">
                         <div class="">
                             <h4 class="font-semi-bold text-left w-10/12 text-2xl">Get an amazing new 
@@ -63,7 +67,10 @@
                 
                
     </main>
-
+<script>
+    AOS.init(
+        );
+</script>
 </body>
 
 </html>

@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+
+    <!-- swiper js libary -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll libary -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+</head>
+
+
+<body class="bg-black text-white">
+    <div class="flex flex-row items-center">
+        <div class="flex flex-col w-6/12">
+            <header class="navbar  flex flex-row justify-between items-center mx-10 py-5 ">
+                <div class="nav-1 w-2/12 ">
+                    <h4 class="font-semi-bold text-2xl">Flux</h4>
+                </div>
+                <div class="nav-2">
+                    <ul class="flex flex-row gap-12">
+                        <li><a class="relative text-lg focus:text-white  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">Features</a></li>
+                        <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">Updates</a></li>
+                        <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">Community</a></li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <main class="flex flex-row  pt-20 gap-10 items-center justify-between  mx-10">
+
+                <div class="hero-1 flex flex-col gap-10 w-10/12" data-aos="fade-right">
+                    <h4 class="text-6xl font-semi-bold ">Manage your banking. control your finance in one app</h4>
+        
+                    <div class="py-5 flex flex-col gap-10">
+                        <p class="text-md w-10/12">With our mobile app, you can check your balance, transfer money, pay bills, and deposit checks all at the touch of a button.
+                        </p>
+                        <div class="flex flex-row ">
+                            <form class="w-full max-w-sm">
+                                <div class="flex items-center border-b border-white py-2">
+                                  <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="email" aria-label="Full name">
+                                  <button class="flex-shrink-0 border-2 rounded-md p-2 hover:border-white z-1 hover:bg-black bg-white text-black   hover:text-white " type="button">
+                                    Get the app
+                                  </button>
+                                </div>
+                              </form>
+                        </div>
+        
+                    </div>
+                    <div class="flex flex-row gap-10  ">
+                        <div class="flex flex-col">
+                            <p class="text-2xl">4,000,000 USD</p>
+                            <p class="text-gray-500">Credit Limit</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-2xl">30%</p>
+                            <p class="text-gray-500">Cash Back</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-2xl">4%</p>
+                            <p class="text-gray-500">Interest Yearly</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </main>
+        </div>
+
+        <div class="hero-2 bg-white w-6/12 h-6/6  flex " >
+            <img src="/img/hero-9.png" class=" p-28" alt="" data-aos="zoom-in-left">
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+    //to start using the libary
+    AOS.init(
+    );
+
+</script>
+
+</html>
