@@ -9,28 +9,52 @@
 </head>
 
 <body>
-    <header class="navbar  flex flex-row justify-between items-center mx-10 py-5 ">
-        <div class="nav-1 w-1/12">
-            <img src="/img/logo-3.png" alt="">
-        </div>
-        <div class="nav-2">
-            <ul class="flex flex-row gap-12">
+    <header class=" sm:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10 ">
+
+        <nav class="flex items-center justify-between p-2" aria-label="Global">
+
+            <div class="mx flex flex-row items-center w-2/12 sm:w-1/12 sm:gap-5">
+                <img src="/img/logo-3.png" alt="">
+            </div>
+            <ul class="hidden flex flex-row   sm:flex gap-12">
                 <li><a class="relative  w-fit block hover:text-pink-500 after:block after:content-[''] after:absolute after:h-[2px] after:bg-pink-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                        href="">Shop</a></li>
-                <li><a class="relative  w-fit block hover:text-pink-500 after:block after:content-[''] after:absolute after:h-[2px] after:bg-pink-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                        href="">Products</a></li>
-                <li><a class="relative  w-fit block hover:text-pink-500 after:block after:content-[''] after:absolute after:h-[2px] after:bg-pink-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                        href="">Brands</a></li>
-                <li><a class="relative  w-fit block hover:text-pink-500 after:block after:content-[''] after:absolute after:h-[2px] after:bg-pink-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                        href="">Contact Us</a></li>
+                    href="">Shop</a></li>
+            <li><a class="relative  w-fit block hover:text-pink-500 after:block after:content-[''] after:absolute after:h-[2px] after:bg-pink-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Products</a></li>
+            <li><a class="relative  w-fit block hover:text-pink-500 after:block after:content-[''] after:absolute after:h-[2px] after:bg-pink-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Brands</a></li>
+            <li><a class="relative  w-fit block hover:text-pink-500 after:block after:content-[''] after:absolute after:h-[2px] after:bg-pink-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Contact Us</a></li>
             </ul>
+            <div class="nav-3 hidden sm:block">
+                <input type="search" class="p-2 rounded-lg border-2 border-pink-500 outline-pink-500" name="" placeholder="Search" id="">
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button rounded-md p-2 border sm:hidden flex border-pink-500 hover:bg-none hover:text-pink-500">
+                <i class="fa-solid fa-bars text-pink-500"></i></button>
+        </nav>
+        <div class="block sm:hidden mobile-menu">
+            <ul class="mx-auto pl-10 text-pink-500 flex flex-col gap-2">
+                <li><a class="relative  w-fit block hover:text-pink-500 after:block after:content-[''] after:absolute after:h-[2px] after:bg-pink-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Shop</a></li>
+            <li><a class="relative  w-fit block hover:text-pink-500 after:block after:content-[''] after:absolute after:h-[2px] after:bg-pink-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Products</a></li>
+            <li><a class="relative  w-fit block hover:text-pink-500 after:block after:content-[''] after:absolute after:h-[2px] after:bg-pink-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Brands</a></li>
+            <li><a class="relative  w-fit block hover:text-pink-500 after:block after:content-[''] after:absolute after:h-[2px] after:bg-pink-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Contact Us</a></li>
+            </ul>
+            <div class="nav-3 pl-10 p-4">
+                <input type="search" class="p-2 rounded-lg border-2 border-pink-500 outline-pink-500" name="" placeholder="Search" id="">
+            </div>
         </div>
-        <div class="nav-3">
-            <input type="search" class="p-2 rounded-lg border-2 border-pink-500 outline-pink-500" name="" placeholder="Search" id="">
+        <div>
+
         </div>
     </header>
-    <main class="flex flex-row justify-around pt-10 justify-items-center  mx-10">
-        <div class="hero-1 w-3/12 flex flex-col  gap-10">
+    <main class="flex flex-col sm:flex-row  justify-around pt-40 gap-10 justify-items-center  mx-10">
+        <div class="hero-1 sm:w-3/12 flex flex-col  gap-10">
             <div class="hero-1-1 m-0">
                 <h4 class="text-6xl font-semi-bold">
                     Bring your
@@ -50,7 +74,7 @@
                 <a href="" class="cursor-pointer p-3 border-2 w-40 text-pink-500 hover:text-white hover:bg-pink-500 rounded-lg border-pink-500"><i class="fa fa-shop" aria-hidden="true"></i> Shop Now </a>
             </div>
         </div>
-        <div class="hero-2 sclae-125">
+        <div class="hero-2 sm:sclae-125">
             <img src="/img/main-2.png"  class="mx-auto" alt="">
         </div>
         <div class="hero-3 w- gap-5 flex flex-col">
@@ -78,5 +102,18 @@
     </main>
 
 </body>
+<script>
+  
+    // Grab HTML Elements
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
 
+    // Add Event Listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+  //to start using the libary
+  AOS.init(
+    );
+</script>
 </html>
