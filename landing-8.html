@@ -20,7 +20,61 @@
 
 
 <body class="bg-black text-white">
+    <header class=" sm:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10  ">
 
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row   items-center sm:gap-5">
+                <h4 class="font-semi-bold text-2xl">Web Draw</h4>
+            </div>
+            <ul class="hidden flex flex-row text-white   sm:flex gap-12">
+                <li><a class="relative text-lg focus:text-black  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Home</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Build</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Schedule a test</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Download</a></li>
+            </ul>
+            <div class="nav-3 hidden sm:block">
+                           <ul class="flex flex-row gap-5">
+                            <a class="border-2 rounded-md p-2 border-white hover:bg-white hover:text-black   text-white "
+                            href="">Login</a>
+                            <a class="border-2 rounded-md p-2 hover:border-white hover:bg-black bg-white text-black   hover:text-white "
+                            href="">Sign up</a>
+            </ul>
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button rounded-md p-2 border sm:hidden flex border-white hover:bg-none hover:text-white">
+                <i class="fa-solid fa-bars text-white"></i></button>
+        </nav>
+        <div class="block sm:hidden mobile-menu ">
+            <ul class="mx-auto pl-10 text-white flex flex-col gap-2">
+                <li><a class="relative text-lg focus:text-black  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Home</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Build</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Schedule a test</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Download</a></li>
+            </ul>
+            <div class="nav-3 pl-8 p-4">
+                <ul class="flex flex-row gap-5">
+                    <a class="border-2 rounded-md p-2 border-white hover:bg-white hover:text-black   text-white "
+                    href="">Login</a>
+                    <a class="border-2 rounded-md p-2 hover:border-white hover:bg-black bg-white text-black   hover:text-white "
+                    href="">Sign up</a>
+            </ul>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </header>
+<!-- 
     <header class="navbar  flex flex-row justify-between items-center mx-10 py-5 ">
         <div class="nav-1 w-2/12 ">
             <h4 class="font-semi-bold text-2xl">Web Draw</h4>
@@ -43,14 +97,32 @@
                 <a class="border-2 rounded-md p-2 hover:border-white hover:bg-black bg-white text-black   hover:text-white "
                 href="">Get Started</a>
         </div>
-    </header>
+    </header> -->
 
-    <main class="flex flex-row  pt-20 gap-10 items-center justify-between  mx-10">
+    <main class="flex flex-col sm:flex-row  pt-32 sm:pt-40 gap-10 items-center justify-between  mx-10">
+        <div class="hero-2 block sm:hidden" data-aos="zoom-in-left">
+            <img src="/img/hero-8.png"  alt="" style="width: 150%;">
+        </div>
 
-        <div class="hero-1 flex flex-col gap-10 w-10/12" data-aos="fade-right">
-            <h4 class="text-6xl font-semi-bold ">Build a great portfolio to showcase !!</h4>
+        <div class="hero-1 flex flex-col gap-10 sm:w-10/12" data-aos="fade-right">
+            <h4 class="text-4xl sm:text-6xl font-semi-bold ">Build a great portfolio to showcase !!</h4>
      
-            <div class="py-10 flex flex-col gap-10">
+            <div class="sm:hidden flex flex-col gap-5">
+                <p class="text-md sm:w-10/12">Our team of experienced designers and developers will work with you to create a portfolio 
+                    that is visually appealing, easy to navigate, and highlights your skills and experience.
+                     We'll also help you choose the right projects to showcase and write compelling copy that tells your story.
+    
+                </p>
+                <div class="flex  flex-row sm:flex-col gap-10">
+                    <a class="border-2 rounded-md p-2 border-white hover:bg-white hover:text-black   text-white "
+                    href="">Try web-draw for free</a>
+                    <a class="border-2 rounded-md p-2 hover:border-white hover:bg-black bg-white text-black   hover:text-white "
+                    href="">How it works</a>
+                </div>
+                
+            </div>
+
+            <div class=" hidden sm:flex flex flex-col gap-10">
                 <p class="text-md w-10/12">Our team of experienced designers and developers will work with you to create a portfolio 
                     that is visually appealing, easy to navigate, and highlights your skills and experience.
                      We'll also help you choose the right projects to showcase and write compelling copy that tells your story.
@@ -71,7 +143,7 @@
                 <i class="fa fa-facebook" aria-hidden="true"></i>
             </div>
         </div>
-        <div class="hero-2" data-aos="zoom-in-left">
+        <div class="hero-2 hidden sm:block" data-aos="zoom-in-left">
             <img src="/img/hero-8.png"  alt="" style="width: 150%;">
         </div>
     </main>
@@ -79,9 +151,7 @@
 </body>
 
 <script>
-    //to start using the libary
-    AOS.init(
-    );
+   
  // Grab HTML Elements
  const btn = document.querySelector("button.mobile-menu-button");
  const menu = document.querySelector(".mobile-menu");
@@ -90,6 +160,9 @@
  btn.addEventListener("click", () => {
      menu.classList.toggle("hidden");
  });
+  //to start using the libary
+  AOS.init(
+    );
 </script>
 
 </html>

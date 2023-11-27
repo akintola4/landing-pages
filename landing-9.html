@@ -21,8 +21,60 @@
 
 <body class="bg-black text-white">
     <div class="flex flex-row items-center">
-        <div class="flex flex-col w-6/12">
-            <header class="navbar  flex flex-row justify-between items-center mx-10 py-5 ">
+        <div class="flex flex-col sm:w-6/12">
+                <header class=" sm:px-20 fixed sm:hidden   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10  ">
+
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row   items-center sm:gap-5">
+                <h4 class="font-semi-bold text-2xl">Flux</h4>
+            </div>
+            <ul class="hidden flex flex-row text-white   sm:flex gap-12">
+                 <li><a class="relative text-lg focus:text-white  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">Features</a></li>
+                        <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">Updates</a></li>
+                        <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">Community</a></li>
+
+            </ul>
+            <div class="nav-3 hidden sm:block">
+                           <ul class="flex flex-row gap-5">
+                            <a class="border-2 rounded-md p-2 border-white hover:bg-white hover:text-black   text-white "
+                            href="">Login</a>
+                            <a class="border-2 rounded-md p-2 hover:border-white hover:bg-black bg-white text-black   hover:text-white "
+                            href="">Sign up</a>
+            </ul>
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button rounded-md p-2 border sm:hidden flex border-white hover:bg-none hover:text-white">
+                <i class="fa-solid fa-bars text-white"></i></button>
+        </nav>
+        <div class="block sm:hidden mobile-menu ">
+            <ul class="mx-auto pl-10 text-white flex flex-col gap-2">
+                 <li><a class="relative text-lg focus:text-white  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">Features</a></li>
+                        <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">Updates</a></li>
+                        <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">Community</a></li>
+
+            </ul>
+            <div class="nav-3 pl-8 p-4">
+                <ul class="flex flex-row gap-5">
+                    <a class="border-2 rounded-md p-2 border-white hover:bg-white hover:text-black   text-white "
+                    href="">Login</a>
+                    <a class="border-2 rounded-md p-2 hover:border-white hover:bg-black bg-white text-black   hover:text-white "
+                    href="">Sign up</a>
+            </ul>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </header>
+            <header class="navbar hidden sm:flex flex flex-row justify-between items-center mx-10 py-5 ">
                 <div class="nav-1 w-2/12 ">
                     <h4 class="font-semi-bold text-2xl">Flux</h4>
                 </div>
@@ -39,9 +91,9 @@
                 </div>
             </header>
 
-            <main class="flex flex-row  pt-20 gap-10 items-center justify-between  mx-10">
+            <main class="flex flex-col sm:flex-row  pt-20 gap-10 items-center justify-between  mx-10">
 
-                <div class="hero-1 flex flex-col gap-10 w-10/12" data-aos="fade-right">
+                <div class="hero-1 flex flex-col gap-10 sm:w-10/12" data-aos="fade-right">
                     <h4 class="text-6xl font-semi-bold ">Manage your banking. control your finance in one app</h4>
         
                     <div class="py-5 flex flex-col gap-10">
@@ -78,7 +130,7 @@
             </main>
         </div>
 
-        <div class="hero-2 bg-white w-6/12 h-6/6  flex " >
+        <div class="hero-2 bg-white hidden sm:flex sm:w-6/12 sm:h-6/6  flex " >
             <img src="/img/hero-9.png" class=" p-28" alt="" data-aos="zoom-in-left">
         </div>
     </div>
