@@ -13,7 +13,7 @@
 </head>
 
 <body class="font-sans bg-green-700 text-white">
-    <header class=" sm:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10 ">
+    <header class=" sm:px-10 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10 ">
 
         <nav class="flex items-center justify-between p-4" aria-label="Global">
 
@@ -74,7 +74,7 @@
         </div>
         <div class="hero-2 flex pt-32 flex-col sm:flex-row  gap-32 items-center">
             <div class="hero-2-1 bottom-0 sm:scale-125" >
-                <img src="/img/main.png" alt="">
+                <img src="img/main.png" alt="">
             </div>
             <div class="hero-2-2 mx-10 sm:w-4/12 pl-49  flex flex-col gap-5 right-0" >
                 <h4 class="text-orange-400 text-3xl font-bold">In need of an Amazing meal ?</h4>
@@ -89,9 +89,7 @@
     </main>
     <footer></footer>
     <script>
-        //to start using the libary
-        AOS.init(
-        );
+       
         // Grab HTML Elements
         const btn = document.querySelector("button.mobile-menu-button");
         const menu = document.querySelector(".mobile-menu");
@@ -100,7 +98,9 @@
         btn.addEventListener("click", () => {
             menu.classList.toggle("hidden");
         });
-    
+     //to start using the libary
+     AOS.init(
+        );
     </script>
 </body>
 
